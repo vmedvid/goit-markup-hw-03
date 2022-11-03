@@ -47,10 +47,6 @@ img {
   text-decoration: none;
 }
 
-.nav-link {
-  text-decoration: none;
-}
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -72,14 +68,16 @@ header {
 
 .header.container {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
   align-items: center;
 }
 
 .nav-menu {
   display: flex;
   align-items: center;
+}
+
+.nav-menu .logo {
+  margin-right: 93px;
 }
 
 .nav-list {
@@ -89,22 +87,11 @@ header {
   justify-content: space-between;
 }
 
-.nav-menu .logo {
-  margin-right: 93px;
-}
-
-.header-contacts-list {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-}
-
-.header-contacts-item {
-  margin-right: 50px;
-}
-
-.header-contacts-item:last-child {
-  margin-right: 0;
+.nav-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  text-decoration: none;
 }
 
 .logo {
@@ -151,15 +138,35 @@ header {
   color: var(--brand-color);
 }
 
+.header-contacts-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header-contacts-item {
+  margin-right: 50px;
+}
+
+.header-contacts-item:last-child {
+  margin-right: 0;
+}
+
+.header-contacts.link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
 /*------------------- Footer -------------------*/
 
 .footer-section {
+  padding: 60px 0;
+
   background-color: var(--background-color);
 }
 
 .footer.container {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-section .logo-part {
@@ -209,19 +216,17 @@ header {
 /*------------------- сторінка Студія -------------------*/
 
 .hero-section {
+  padding: 200px 0;
   background-color: var(--background-color);
 }
 
 .hero.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 106px 252px;
 }
 
 .hero-title {
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
+
+  width: 696px;
 
   font-weight: 900;
   font-size: 44px;
@@ -233,6 +238,8 @@ header {
 }
 
 .hero-button {
+  display: block;
+  margin: 0 auto;
   padding: 10px 32px;
 
   font-weight: 700;
@@ -247,11 +254,9 @@ header {
 }
 
 .features-section.section {
-  padding-top: 0;
 }
 
 .features.container {
-  padding-top: 94px;
 }
 
 .features-list {
@@ -348,8 +353,14 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-card-caption {
+  padding-top: 30px;
+  padding-right: 70;
+  padding-bottom: 30px;
+  padding-left: 70;
+}
+
 .team-section-header {
-  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -361,8 +372,6 @@ header {
 }
 
 .team-position {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
